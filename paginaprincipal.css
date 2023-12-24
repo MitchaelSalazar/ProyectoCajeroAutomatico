@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, rgb(65, 189, 141),rgb(99, 192, 99));
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 15%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(65, 189, 141),rgb(99, 192, 99));
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+h1{
+    margin-left: 2.5%;
+    font-size: 40px;
+}
+
+#encabezado{
+    display: flex;
+    flex-direction: column;
+    width: 6%;
+    height: 50%;
+    margin-right: 5%;
+}
+
+select{
+    width: 120%;
+    height: 50%;
+}
+
+.deposito{
+    background-color: beige;  
+    height: 85%;
+    width: 100%;
+    /*Posicionando el contenido del main para poder hacer una transición de movimiento posteriormente con JavaScript*/
+    position: absolute;
+    top: 15%;
+    left: 200%;
+    display: flex;
+    flex-direction: row;
+}
+
+#botonesdeposito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(30, 109, 155);
+}
+
+#pantalladeposito{
+    width: 55%;
+    height: 15%;
+    margin-bottom: 20px;
+}
+
+.botonesdeposito{
+   background-color:gray;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   width: 55%;
+   height: 55%;
+   border: 3px black solid;
+   border-radius: 8px;
+}
+
+.botondeposito{
+    width: 20%;
+    height: 15%;
+    margin: 2%;
+    border-radius: 5px;
+    box-shadow: inset;
+    font-weight: bold;
+}
+
+#cancelar_deposito{
+    background-color: red;
+    margin-left: 6%;
+    font-size: 65%;
+    font-weight: bold;
+}
+
+#limpiar_deposito{
+    background-color: yellow;
+    margin-left: 6%;
+    font-size: 65%;
+    font-weight: bold;
+}
+
+#entrar_deposito{
+    background-color: green;
+    margin-left: 6%;
+    font-size: 65%;
+    font-weight: bold;
+}
+
+#vacio_deposito{
+    margin-left: 6%;
+}
+
+.saldo{
+    margin-top: 10px;
+}
+  
+#mensajedeposito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-size: 300%;
+    font-weight: bold;
+    text-align: justify;
+    padding: 5%;
+}
+
+/*Estilos de la pantalla principal de opciones del cajero automático */
+.pantallaprincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: gray;
+}
+
+#botonesprincipales{
+    height: 75%;
+    width: 100%;
+    top: 15%;
+    background-color: red;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    /*right de 100% oculta hacia la izquierda el contenido de la pantalla principal*/
+    right: 00%
+}
+
+.botonprincipal{
+    height: 50%;
+    width: 50%;
+    font-size: 200%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid{
+    font-size: 80%;
+    margin-right: 15px;
+}
+
+#consulta{
+    width: 100%;
+}
+
+.salircuenta{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top:90%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*right de 100% oculta hacia la izquierda el contenido de la pantalla principal*/
+    right: 00%;
+}
+
+#salircuenta{
+    width: 100%;
+    height: 100%;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+/*Estilos de la pantalla de retiro de dinero del cajero automático*/
+.retiro{
+    background-color: beige;  
+    height: 85%;
+    width: 100%;
+    /*Posicionando el contenido del main para poder hacer una transición de movimiento posteriormente con JavaScript*/
+    position: absolute;
+    top: 15%;
+    left: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#botonesretiro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(30, 109, 155);
+}
+
+#pantallaretiro{
+    width: 55%;
+    height: 15%;
+    margin-bottom: 20px;
+}
+
+.botonesretiro{
+   background-color:gray;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   width: 55%;
+   height: 55%;
+   border: 3px black solid;
+   border-radius: 8px;
+}
+
+.botonretiro{
+    width: 20%;
+    height: 15%;
+    margin: 2%;
+    border-radius: 5px;
+    box-shadow: inset;
+    font-weight: bold;
+}
+
+#cancelar_retiro{
+    background-color: red;
+    margin-left: 6%;
+    font-size: 65%;
+    font-weight: bold;
+}
+
+#limpiar_retiro{
+    background-color: yellow;
+    margin-left: 6%;
+    font-size: 65%;
+    font-weight: bold;
+}
+
+#entrar_retiro{
+    background-color: green;
+    margin-left: 6%;
+    font-size: 65%;
+    font-weight: bold;
+}
+
+#vacio_retiro{
+    margin-left: 6%;
+}
+ 
+#mensajeretiro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-size: 300%;
+    font-weight: bold;
+    text-align: justify;
+    padding: 5%;
+}
+
+/*Estilo para el mensaje de la consulta del saldo del usuario*/
+#consultasaldo{
+    top: 50%;
+    font-size: 200%;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 10%;
+    right: 100%;
+}

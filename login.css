@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, rgb(175, 236, 213),rgb(140, 233, 140));
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 15%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(65, 189, 141),rgb(99, 192, 99));
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5%;
+    position: absolute;
+}
+
+h1{
+    margin-left: 2.5%;
+    font-size: 40px;
+}
+
+#encabezado{
+    display: flex;
+    flex-direction: column;
+    width: 6%;
+    height: 50%;
+    margin-right: 5%;
+}
+
+option{
+    font-size: 17px ;
+    height: 80%;
+}
+
+#accesocajero{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 15%;
+    width: 100%;
+    height: 85%;
+    background: linear-gradient(to right, rgb(175, 236, 213),rgb(140, 233, 140));
+}
+
+.recuadro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 5px 10px rgb(27, 26, 26);
+    background-color:white;
+    width: 35%;
+    height: 80%;
+    border: 2px black solid;
+    border-radius: 10%;
+    top: 15%;
+}
+
+h2{
+    padding: 0.5% 0 0.5% 0;
+    font-size: 170%;
+}
+
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 55%;
+} /*Posicionando el contenido del main para poder hacer una transición de movimiento posteriormente con JavaScript*/
+
+input{
+    padding-left: 10px;
+    height: 20%;
+    width: 80%;
+    font-size: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px rgb(99, 192, 99) ;
+    padding-bottom: 5%;
+}
+
+#login{
+    height: 20%;
+    width: 50%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 100%;
+    background: linear-gradient(to right, rgb(65, 189, 141),rgb(99, 192, 99));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#accesocontraseña{
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+#accesoregistro{
+  
+}
+
+.error{
+    color: red;
+    font: bold;
+}
+
+.escondido{
+    display:none ;
+}
+
+/*Estilos del registro del usuario*/
+
+.registro{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    width: 100%;
+    height: 85%;
+    background: linear-gradient(to right, rgb(175, 236, 213),rgb(140, 233, 140));
+    left: 100%;
+}
+
+#registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 5px 10px rgb(27, 26, 26);
+    background-color:white;
+    width: 35%;
+    height: 80%;
+    border: 2px black solid;
+    border-radius: 10%;
+    margin-top: 0.75%;
+    padding-top: 1%;
+}
+
+#registrolisto{
+    margin: 2% 0 2% 0;
+    font-size: 100%;
+    font-weight: bold;
+    width: 40%;
+    height:7.5%;
+    background: linear-gradient(to right, rgb(175, 236, 213),rgb(140, 233, 140));
+}
+
+#volver{
+    margin-top: 2.5%;
+}
+

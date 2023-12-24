@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paginaprincipal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Página principal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Banca Fiel</h1>
+
+            <form id="encabezado">
+                <label for="usuario"><b>Idioma</b></label>
+                <select name="idioma" id="idioma" multiple>
+                    <option value="Español">Español</option>
+                    <option value="English">English</option>
+                    </select>
+            </form>
+           
+    </header>
+
+    <!--Pantalla de retiro de dinero del cajero automático-->
+
+    <main class="retiro">
+        <article id="botonesretiro">
+            <input type="number" id="pantallaretiro">
+            <section class="botonesretiro">
+                <button class="botonretiro" id="1_retiro">1</button>
+                <button class="botonretiro" id="2_retiro">2</button>
+                <button class="botonretiro" id="3_retiro">3</button>
+                <button class="botonretiro" id="cancelar_retiro">CANCELAR</button>
+                <button class="botonretiro" id="4_retiro">4</button>
+                <button class="botonretiro" id="5_retiro">5</button>
+                <button class="botonretiro" id="6_retiro">6</button>
+                <button class="botonretiro" id="limpiar_retiro">LIMPIAR</button>
+                <button class="botonretiro" id="7_retiro">7</button>
+                <button class="botonretiro" id="8_retiro">8</button>
+                <button class="botonretiro" id="9_retiro">9</button>
+                <button class="botonretiro" id="entrar_retiro">ENTRAR</button>
+                <button class="botonretiro"></button>
+                <button class="botonretiro" id="0_retiro">0</button>
+                <button class="botonretiro"></button>
+                <button class="botonretiro" id="vacio_retiro"></button>
+            </section> 
+            <strong class="saldo">Saldo Actual: </strong>  
+        </article> 
+
+        <aside id="mensajeretiro">
+            "Introduce el monto exacto que desees retirar"
+        </aside>
+
+    </main>
+
+    <!--Pantalla de deposito de dinero del cajero automático-->
+
+    <main class="deposito">
+        <article id="botonesdeposito">
+            <input type="number" id="pantalladeposito">
+            <section class="botonesdeposito">
+                <button class="botondeposito" id="1_deposito">1</button>
+                <button class="botondeposito" id="2_deposito">2</button>
+                <button class="botondeposito" id="3_deposito">3</button>
+                <button class="botondeposito" id="cancelar_deposito">CANCELAR</button>
+                <button class="botondeposito" id="4_deposito">4</button>
+                <button class="botondeposito" id="5_deposito">5</button>
+                <button class="botondeposito" id="6_deposito">6</button>
+                <button class="botondeposito" id="limpiar_deposito">LIMPIAR</button>
+                <button class="botondeposito" id="7_deposito">7</button>
+                <button class="botondeposito" id="8_deposito">8</button>
+                <button class="botondeposito" id="9_deposito">9</button>
+                <button class="botondeposito" id="entrar_deposito">ENTRAR</button>
+                <button class="botondeposito"></button>
+                <button class="botondeposito" id="0_deposito">0</button>
+                <button class="botondeposito"></button>
+                <button class="botondeposito" id="vacio_deposito"></button>
+            </section> 
+            <strong class="saldo">Saldo Actual: </strong>  
+        </article> 
+
+        <aside id="mensajedeposito">
+            "Introduce el monto exacto que desees depositar"
+        </aside>
+
+    </main>
+
+    <!--Pantalla principal del cajero automático-->
+
+    <main class="pantallaprincipal">
+        <article id="botonesprincipales">
+            <button class="botonprincipal" onclick="accesoretiro" id="retiro"><i class="fa-solid fa-money-bill-transfer"></i>RETIRAR DINERO</button>
+            <button class="botonprincipal" onclick="accesodeposito" id="deposito"><i class="fa-solid fa-money-bill-trend-up"></i>DEPOSITAR DINERO</button>
+            <button class="botonprincipal" onclick="accesoconsulta" id="consulta"><i class="fa-solid fa-clipboard-question"></i>CONSULTA DE DATOS</button>
+        </article>
+        
+        <footer class="salircuenta">
+            <button id="salircuenta"><i class="fa-solid fa-person-through-window"></i>SALIR</button>
+        </footer>
+    </main>
+
+    <!--Consulta de saldo-->
+    <main class="consultasaldo">
+        <article id="consultasaldo">
+            Hola! tu saldo actual es de 
+        </article>
+    </main>
+
+    <script src="paginaprincipal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Entrada principal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Banca Fiel</h1>
+
+        <form id="encabezado">
+            <label for="usuario"><b>Idioma</b></label>
+            <select name="idioma" id="idioma" multiple>
+                <option value="Español">Español</option>
+                <option value="English">English</option>
+            </select>
+        </form>
+
+    </header>
+
+    <!--Estructura del acceso del usuario al cajero autómatico-->
+    <article id="accesocajero">
+        <section class="recuadro">
+            <h2>Bienvenid@ a Banca Fiel</h2>
+
+            <form id="formulario">
+
+                <input type="text" class="input" id="usuario" placeholder="Ingresa tu usuario">
+
+                <span class="escondido" id="errorusuario">Usuario Incorrecto</span>
+
+                <input type="password" class="input" id="contraseña" placeholder="Ingresa tu contraseña">
+
+                <span class="escondido" id="errorcontraseña">Contraseña Incorrecta</span>
+
+                <button type="submit" id="login">Acceder</button>
+
+                <span class="escondido" id="errordatos">Ingresa tus datos!</span>
+            </form>
+
+            <form id="accesocontraseña">
+                <button onclick="recuperacioncontraseña" id="pedircontraseña">¿Necesitas tu contraseña?</button>
+            </form>
+            <form class="accesoregistro">
+                ¿No tienes cuenta? <button onclick="pantallaregistro" id="darregistro">Registrate</button>
+            </form>
+        </section>
+    </article>
+
+    <!--Estructura de la pantalla de registro del usuario-->
+    <article id="interfazregistro">
+        <section class="registro">
+            <h2>REGISTRATE</h2>
+
+            <form id="registro">
+                <input type="text" class="input" id="nombre" placeholder="Nombre completo">
+
+                <span class="escondido" id="errornombre">Escribe tu nombre</span>
+
+                <input type="text" class="input" id="correo" placeholder="Correo eléctrónico">
+
+                <span class="escondido" id="errorcorreo">Escribe tu correo</span>
+
+                <input type="password" class="input" id="contraseñaregistro" placeholder="Contraseña (mínimo 8 carácteres)">
+
+                <span class="escondido" id="errorcontraseña">Escribe tu contraseña</span>
+
+                <input type="password" class="input" id="verificacioncontraseña" placeholder="Escribe nuevamente tu contraseña">
+
+                <span class="escondido" id="errorverificacioncontraseña">Tu contraseña no coincide</span>
+
+                <input type="date" class="input" id="fechacumple" placeholder="Anota tu fecha de cumpleaños">
+                
+                <span class="escondido" id="errorfechacumple">Tu contraseña no coincide</span>
+
+                <button type="submit" id="registrolisto">Registrarte</button>
+
+                <span class="escondido" id="errorregistrolisto">Ingresa tus datos!</span>
+            </form>
+            
+        </section>
+
+    </article>
+
+    <script src="login.js"></script>
+</body>
+</html>
